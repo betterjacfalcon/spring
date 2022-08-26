@@ -14,8 +14,7 @@ public class Motor {
 	public Motor() {		
 
 	}
-	
-	@Autowired
+	 
 	public Motor(@Value("XL1") String marca, @Value("1982") Integer modelo) {		
 		this.marca = marca;
 		this.modelo = modelo;

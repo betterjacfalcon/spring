@@ -1,6 +1,5 @@
 package com.spring.dependy.atributo;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -15,20 +14,19 @@ public class Motor {
 
 	}
 	
-	@Autowired
-	public Motor(@Value("XL1") String marca, @Value("1982") Integer modelo) {		
-		this.marca = marca;
-		this.modelo = modelo;
-	}
 	public String getMarca() {
 		return marca;
 	}
+	
+	@Value("XL1")
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
 	public Integer getModelo() {
 		return modelo;
 	}
+	
+	@Value("1982")
 	public void setModelo(Integer modelo) {
 		this.modelo = modelo;
 	}

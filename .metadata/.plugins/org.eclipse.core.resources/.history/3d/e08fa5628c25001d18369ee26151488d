@@ -1,0 +1,21 @@
+package com.spring.dependy;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.spring.dependy.atributo.Coche;
+import com.spring.dependy.atributo.Motor;
+
+@SpringBootApplication
+public class DependecyInjectionApplication {
+
+	public static void main(String[] args) {
+		//SpringApplication.run(DependecyInjectionApplication.class, args);
+		
+		Motor motor = new Motor("XL1", 1981);
+		Coche coche = new Coche("VW", 1986, motor);
+		
+		System.out.println(coche);
+	}
+
+}

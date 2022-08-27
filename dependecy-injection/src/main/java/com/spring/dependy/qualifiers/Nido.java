@@ -16,8 +16,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Nido {
 
-	@Autowired
-	@Qualifier("pajarito")
+	@Autowired	
 	private Animal animal;
 	
 	private static final Logger log = LoggerFactory.getLogger(Nido.class);

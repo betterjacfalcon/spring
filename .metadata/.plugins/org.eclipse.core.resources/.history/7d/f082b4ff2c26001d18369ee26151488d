@@ -1,0 +1,8 @@
+package com.spring.dependy.qualifiers;
+
+import org.springframework.stereotype.Component;
+
+@Component 
+public class Perro extends Animal {
+
+}

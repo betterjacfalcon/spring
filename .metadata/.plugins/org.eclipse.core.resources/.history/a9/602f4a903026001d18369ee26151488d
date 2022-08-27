@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package com.spring.dependy.qualifiers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+/**
+ * @author jacfa
+ *
+ */
+@Component
+public class Nido {
+
+	@Autowired
+	private Animal pajaro;
+}

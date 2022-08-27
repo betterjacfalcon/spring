@@ -1,0 +1,25 @@
+package com.spring.dependy;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.spring.dependy.qualifiers.Avion;
+import com.spring.dependy.qualifiers.Perro;
+
+@SpringBootApplication
+public class DependecyInjectionApplication {
+	
+	private static final Logger log = LoggerFactory.getLogger(DependecyInjectionApplication.class);
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(DependecyInjectionApplication.class, args);	
+		
+		Perro perro = context.getBean(Perro.class);
+		
+		log.info("Objeto perro{}", perro.getNombre());
+	}
+
+}

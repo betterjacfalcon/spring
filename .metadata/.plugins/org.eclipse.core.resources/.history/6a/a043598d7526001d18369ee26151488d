@@ -1,0 +1,5 @@
+package com.spring.dependy.config;
+
+public class FigurePropertyConfiguration {
+
+}

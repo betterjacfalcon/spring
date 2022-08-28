@@ -8,8 +8,6 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 import com.spring.dependy.autowire.AreaCalculatorService;
-import com.spring.dependy.profiles.EnvironmenteService;
-import com.spring.dependy.scope.ExampleScope;
 
 @SpringBootApplication
 public class DependecyInjectionApplication {

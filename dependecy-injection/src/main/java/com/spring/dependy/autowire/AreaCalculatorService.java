@@ -15,7 +15,7 @@ public class AreaCalculatorService {
 		double area =0;
 		
 		for(Figure figure: figures) {
-			area = figure.calcularArea();
+			area+= figure.calcularArea();
 		}
 		return area;
 	}

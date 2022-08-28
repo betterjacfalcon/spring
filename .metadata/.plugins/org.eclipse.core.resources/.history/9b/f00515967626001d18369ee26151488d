@@ -1,0 +1,10 @@
+ package com.spring.dependy.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+@Configuration
+@PropertySource("classpath:areas.properties")
+public class FigurePropertyConfiguration {
+
+}

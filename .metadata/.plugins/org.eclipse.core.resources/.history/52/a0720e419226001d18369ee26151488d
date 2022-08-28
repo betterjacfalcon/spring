@@ -1,0 +1,21 @@
+package com.spring.dependy.lifecycle;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.stereotype.Component;
+
+import com.spring.dependy.DependecyInjectionApplication;
+
+@Component
+public class LifeCycleBean implements BeanNameAware{
+
+	private static final Logger log = LoggerFactory.getLogger(LifeCycleBean.class);
+	
+	@Override
+	public void setBeanName(String name) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

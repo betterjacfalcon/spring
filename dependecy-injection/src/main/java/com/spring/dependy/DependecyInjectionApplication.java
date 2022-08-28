@@ -1,13 +1,13 @@
 package com.spring.dependy;
 
-import java.beans.Expression;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
-import org.springframework.expression.ExpressionParser;
-import org.springframework.expression.spel.standard.SpelExpressionParser;
+
+import com.spring.dependy.lifecycle.LifeCycleBean;
 
 @SpringBootApplication
 public class DependecyInjectionApplication {
@@ -20,9 +20,8 @@ public class DependecyInjectionApplication {
 	}
 
 	public static void main(String[] args) {
-		ExpressionParser parser = new SpelExpressionParser();
-		org.springframework.expression.Expression expression =  parser.parseExpression("10 + 20");
-		log.info("String expression {}", expression.getValue());
+		ConfigurableApplicationContext context = SpringApplication.run(DependecyInjectionApplication.class, args);	
+		LifeCycleBean bean = context.getBean(LifeCycleBean.class);
 	}
 
 }

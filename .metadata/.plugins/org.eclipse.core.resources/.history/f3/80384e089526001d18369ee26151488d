@@ -1,0 +1,18 @@
+package com.spring.dependy.lifecycle;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+public class ExplicitBean {
+//Definir un bean de forma explicita
+	
+	@PostConstruct
+	public void init() {
+		System.out.println("Init method ");
+	}
+	
+	@PreDestroy
+	public void destroy() {
+		System.out.println("Destroy method ");
+	}
+}

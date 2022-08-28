@@ -1,13 +1,13 @@
 package com.spring.dependy;
 
+import java.beans.Expression;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
-
-import com.spring.dependy.autowire.AreaCalculatorService;
+import org.springframework.expression.ExpressionParser;
+import org.springframework.expression.spel.standard.SpelExpressionParser;
 
 @SpringBootApplication
 public class DependecyInjectionApplication {
@@ -20,9 +20,9 @@ public class DependecyInjectionApplication {
 	}
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext context = SpringApplication.run(DependecyInjectionApplication.class, args);	
-		AreaCalculatorService calcular = context.getBean(AreaCalculatorService.class);
-		log.info("Area Total {}", calcular.calcAreas());
+		ExpressionParser parser = new SpelExpressionParser();
+		org.springframework.expression.Expression expression =  parser.parseExpression("10 + 20");
+		log.info("String expression {}", expression.getValue());
 	}
 
 }

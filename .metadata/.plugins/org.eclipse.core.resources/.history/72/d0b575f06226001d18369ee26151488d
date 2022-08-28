@@ -1,0 +1,11 @@
+package com.spring.dependy.profiles;
+
+public class DevEnvironmenteService implements EnvironmenteService{
+
+	@Override
+	public String getEnvironmente() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

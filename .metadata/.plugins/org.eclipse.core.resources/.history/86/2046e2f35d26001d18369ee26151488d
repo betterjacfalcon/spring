@@ -1,0 +1,8 @@
+package com.spring.dependy.profiles;
+
+public class EnvironmenteService {
+	
+	public String getEnviroment() {
+		return "";
+	}
+}

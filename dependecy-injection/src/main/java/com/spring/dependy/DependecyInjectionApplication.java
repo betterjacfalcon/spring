@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import com.spring.dependy.profiles.EnvironmenteService;
+import com.spring.dependy.scope.ExampleScope;
 
 @SpringBootApplication
 public class DependecyInjectionApplication {
@@ -15,8 +16,10 @@ public class DependecyInjectionApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(DependecyInjectionApplication.class, args);	
-		EnvironmenteService environmenteService = context.getBean(EnvironmenteService.class);
-		log.info("Active enviroment {}" , environmenteService.getEnvironmente() );
+		ExampleScope exampleScope = context.getBean(ExampleScope.class);
+		ExampleScope exampleScope1 = context.getBean(ExampleScope.class);
+		log.info("are beans equals {}" , exampleScope.equals(exampleScope1) );
+		log.info("are beans equals {}" , exampleScope == exampleScope1 );
 	}
 
 }

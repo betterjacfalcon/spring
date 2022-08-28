@@ -1,0 +1,6 @@
+package com.spring.dependy.scope;
+
+@Service
+public class exampleScope {
+
+}

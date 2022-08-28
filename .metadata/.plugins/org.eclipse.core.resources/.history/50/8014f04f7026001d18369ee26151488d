@@ -1,0 +1,5 @@
+package com.spring.dependy.autowire;
+
+public class Square {
+
+}

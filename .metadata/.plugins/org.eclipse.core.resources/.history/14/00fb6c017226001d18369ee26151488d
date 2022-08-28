@@ -1,0 +1,11 @@
+package com.spring.dependy.autowire;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class AreaCalculatorService {
+	
+	public double calcAreas() {
+		return 0.0;
+	}
+}

@@ -6,8 +6,6 @@ import javax.annotation.PreDestroy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.spring.dependy.DependecyInjectionApplication;
-
 public class ExplicitBean {
 	
 	private static final Logger log = LoggerFactory.getLogger(ExplicitBean.class);

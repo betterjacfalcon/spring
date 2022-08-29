@@ -1,0 +1,8 @@
+package com.spring.dependy.lazy;
+
+import org.springframework.context.annotation.Lazy;
+
+@Lazy
+public class BeanA {
+
+}

@@ -21,13 +21,13 @@ public class DependecyInjectionApplication {
 	}
 	//Definir un bean de forma explicita
 	
-	@Bean(initMethod="init", destroyMethod="destroy")
-	public ExplicitBean getBean() {
-		return new ExplicitBean();
-	}
+	/*
+	 * @Bean(initMethod="init", destroyMethod="destroy") public ExplicitBean
+	 * getBean() { return new ExplicitBean(); }
+	 */
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(DependecyInjectionApplication.class, args);	
-		LifeCycleBean bean = context.getBean(LifeCycleBean.class);
+		//LifeCycleBean bean = context.getBean(LifeCycleBean.class);
 	}
 
 }

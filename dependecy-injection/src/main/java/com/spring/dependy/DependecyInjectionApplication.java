@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 
-import com.spring.dependy.lifecycle.ExplicitBean;
-import com.spring.dependy.lifecycle.LifeCycleBean;
+import com.spring.dependy.aop.TargetObject;
+
 
 @SpringBootApplication
 public class DependecyInjectionApplication {
@@ -27,7 +27,9 @@ public class DependecyInjectionApplication {
 	 */
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(DependecyInjectionApplication.class, args);	
-		//LifeCycleBean bean = context.getBean(LifeCycleBean.class);
+		TargetObject targetObject = context.getBean(TargetObject.class);
+		targetObject.hello("Hello world");
+		targetObject.foo();
 	}
 
 }

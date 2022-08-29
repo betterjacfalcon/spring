@@ -1,0 +1,9 @@
+package com.spring.dependy.aop;
+
+@Component
+public class TargetObject {
+
+	public void hello() {
+		
+	}
+}

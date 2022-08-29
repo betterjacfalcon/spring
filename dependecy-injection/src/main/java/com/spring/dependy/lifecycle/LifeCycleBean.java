@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 //@Lazy si el bean es lazy no se inicializara al menos que se inyecte
-@Lazy 
+@Lazy(false)
 public class LifeCycleBean implements BeanNameAware, InitializingBean, DisposableBean{
 
 	private static final Logger log = LoggerFactory.getLogger(LifeCycleBean.class);

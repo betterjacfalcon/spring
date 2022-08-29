@@ -1,0 +1,9 @@
+package com.spring.dependy.lazy;
+
+import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Devs4jBeanPostProcess implements BeanPostProcessor {
+
+}

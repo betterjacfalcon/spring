@@ -36,7 +36,6 @@ INDEX VERSION 1.131+C:\Users\jacfa\Documents\workspace-spring-tool-suite-4-4.15.
 694230428.index
 3101935381.index
 574343853.index
-2445056547.index
 2672857462.index
 1747280111.index
 2189972791.index

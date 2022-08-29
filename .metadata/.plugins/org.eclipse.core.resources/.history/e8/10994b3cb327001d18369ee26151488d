@@ -1,0 +1,5 @@
+package com.spring.dependy.aop;
+
+public class MyAspect2 {
+
+}
